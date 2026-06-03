@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     SMTP_PORT: int = 587
     SENDER_EMAIL: str
     SENDER_PASSWORD: str
+    APIFY_API_TOKEN: str
     
     DATABASE_URL: str
     
