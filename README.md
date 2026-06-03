@@ -1,6 +1,6 @@
-# JobAngel 👼
+# JobAngel
 
-> An AI-powered personal internship outreach platform that scrapes startups and generates highly personalized cold emails using RAG.
+> AI-powered personal internship outreach platform that scrapes startups and generates highly personalized cold emails using RAG.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=flat-square&logo=fastapi)
