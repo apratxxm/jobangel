@@ -1,6 +1,7 @@
 # pyrefly: ignore [missing-import]
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.routers import scrape
 
 app = FastAPI(title="JobAngel API")
 
@@ -16,3 +17,6 @@ app.add_middleware(
 @app.get("/")
 def read_root():
     return {"status": "ok", "message": "JobAngel backend is running!"}
+
+# attaching the router
+app.include_router(scrape.router, prefix="/scrape", tags=["Scraping"])
