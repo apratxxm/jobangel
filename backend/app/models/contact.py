@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from app.db.session import Base
 
 class Contact(Base):
@@ -9,6 +9,7 @@ class Contact(Base):
     name = Column(String, nullable=False)
     title = Column(String)
     email = Column(String, nullable=False)
+    email_verified = Column(Boolean, default=False)
     linkedin_url = Column(String)
     confidence = Column(String) # high/ medium/ low
     source = Column(String) # hunter/ pattern/ manual
