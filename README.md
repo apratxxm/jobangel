@@ -1,4 +1,4 @@
-## Introduction:
+## Introduction: (Still in development)
 JobAngel automates the most tedious part of applying for tech internships: cold outreach. Instead of manually searching for companies and writing repetitive emails, JobAngel scrapes startup directories, saves the data to a local-first database, and uses the Groq LLM to write highly personalized cold emails based on your specific profile. 
 
 ## Technologies Used:
