@@ -3,6 +3,11 @@ from sentence_transformers import SentenceTransformer
 from sqlalchemy.orm import Session
 from app.models.embedding import Embedding
 
+import os
+from app.config import settings
+os.environ["HF_TOKEN"] = settings.HF_TOKEN
+
+
 #Load the model once (downloads the 80mb model)
 print(f"Loading model all-MiniLM-L6-v2")
 model = SentenceTransformer("all-MiniLM-L6-v2")
