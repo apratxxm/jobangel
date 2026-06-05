@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
@@ -8,6 +9,7 @@ class Settings(BaseSettings):
     SENDER_EMAIL: str
     SENDER_PASSWORD: str
     APIFY_API_TOKEN: str
+    HF_TOKEN: str = ""
     
     DATABASE_URL: str
     

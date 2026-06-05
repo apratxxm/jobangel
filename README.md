@@ -38,34 +38,34 @@ JobAngel automates the most tedious part of applying for tech internships: cold 
 ## How to Run the Project:
 
 1. **Clone & Setup Environment**
-   ```bash
-   git clone <your-repo-url>
-   cd jobangel
-   python -m venv venv
-   venv\Scripts\activate
-   pip install -r backend/requirements.txt
-   ```
+```bash
+git clone <your-repo-url>
+cd jobangel
+python -m venv venv
+venv\Scripts\activate
+pip install -r backend/requirements.txt
+```
 
 2. **Configure Secrets**
-   Create a `.env` file in the root directory:
-   ```env
-   GROQ_API_KEY=your_groq_key
-   SMTP_SERVER=smtp.gmail.com
-   SMTP_PORT=587
-   SENDER_EMAIL=your-email@gmail.com
-   SENDER_PASSWORD=your_gmail_app_password
+Create a `.env` file in the root directory:
+```env
+GROQ_API_KEY=your_groq_key
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SENDER_EMAIL=your-email@gmail.com
+SENDER_PASSWORD=your_gmail_app_password
    APIFY_API_TOKEN=your_apify_token
    DATABASE_URL=postgresql://postgres:[password]@aws-0-region.pooler.supabase.com:5432/postgres
-   ```
+```
 
 3. **Run Database Migrations**
-   ```bash
-   cd backend
-   alembic upgrade head
-   ```
+```bash
+cd backend
+alembic upgrade head
+```
 
 4. **Start the Server**
-   ```bash
-   uvicorn app.main:app --reload
-   ```
+```bash
+uvicorn app.main:app --reload
+```
    *Visit `http://localhost:8000/docs` to see the API dashboard.*
